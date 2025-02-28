@@ -760,7 +760,7 @@ class AppsProvider with ChangeNotifier {
       List<DownloadedApk> additionalAPKs = const []}) async {
     if (firstTimeWithContext != null &&
         settingsProvider.beforeNewInstallsShareToAppVerifier &&
-        (await getInstalledInfo('dev.soupslurpr.appverifier')) != null) {
+        (await getInstalledInfo('io.github.muntashirakon.AppManager')) != null) {
       XFile f = XFile.fromData(file.file.readAsBytesSync(),
           mimeType: 'application/vnd.android.package-archive');
       Fluttertoast.showToast(
