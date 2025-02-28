@@ -758,7 +758,7 @@ class AppsProvider with ChangeNotifier {
       {bool needsBGWorkaround = false,
       bool shizukuPretendToBeGooglePlay = false,
       List<DownloadedApk> additionalAPKs = const []}) async {
-    if (firstTimeWithContext != null &&
+    if (true &&
         settingsProvider.beforeNewInstallsShareToAppVerifier &&
         (await getInstalledInfo('io.github.muntashirakon.AppManager')) != null) {
       XFile f = XFile.fromData(file.file.readAsBytesSync(),
